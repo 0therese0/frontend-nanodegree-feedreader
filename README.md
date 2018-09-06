@@ -30,4 +30,4 @@ Whether you work in an organization that uses test-driven development or in an o
 
 ## Resources
 
-* [List of Resources](https://www.diigo.com/outliner/fjsk23/Udacity-Feed-Reader-Testing-(project-%234)
+* [List of Resources](https://www.diigo.com/outliner/fjsk23/Udacity-Feed-Reader-Testing-(project-%234)?key=i5xqspbzvg)
