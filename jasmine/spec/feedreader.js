@@ -50,12 +50,11 @@ $(function() {
 
     /* A new test suite named "The menu" */
     describe('The menu', function() {
-
+        const body = document.querySelector('body');
         /* A test that ensures the menu element is
          * hidden by default.
          */
         it('Menu is hidden', function() {
-            const body = document.querySelector('body');
             expect(body.classList.contains('menu-hidden')).toBe(true);
         });
 
@@ -63,7 +62,6 @@ $(function() {
          * visibility when the menu icon is clicked.
          */
         it('Menu toggle on/off', function() {
-            const body = document.querySelector('body');
             const menuIconLink = document.querySelector('.menu-icon-link');
 
             menuIconLink.click();
@@ -86,7 +84,7 @@ $(function() {
         });
 
         it('Work complete', function() {
-            const feed = document.querySelector('.feed');
+            const feed = $('.feed .entry');
             expect(feed.children.length > 0).toBe(true);
         });
     });
@@ -101,15 +99,14 @@ $(function() {
          */
         beforeEach(function(done) {
             // First feed
-            loadFeed(0);
-
-            // Stores value of first feed
-            Array.from(feed.children).forEach(content => {
-                firstFeed.push(content.innerText);
+            loadFeed(0, () => {
+                // Stores value of first feed
+                Array.from(feed.children).forEach(content => {
+                    firstFeed.push(content.innerText);
+                });
+                // Second feed
+                loadFeed(1, done);
             });
-
-            // Second feed
-            loadFeed(1, done);
         });
 
         // Compare feeds
