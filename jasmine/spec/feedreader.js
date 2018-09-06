@@ -91,7 +91,7 @@ $(function() {
 
     /* A new test suite named "New Feed Selection" */
     describe('New Feed Selection', function() {
-        const feed = document.querySelector('.feed');
+        const feed = document.querySelector('.feed, .entry');
         const firstFeed = [];
 
         /* A test that ensures when a new feed is loaded
