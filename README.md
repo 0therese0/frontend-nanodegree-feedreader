@@ -29,4 +29,5 @@ Whether you work in an organization that uses test-driven development or in an o
 7. Tests that new content is loaded by loadFeed().
 
 ## Resources
-* [Link to a list of resources] (https://www.diigo.com/outliner/fjsk23/Udacity-Feed-Reader-Testing-(project-%234)?key=i5xqspbzvg)
+
+* [List of Resources](https://www.diigo.com/outliner/fjsk23/Udacity-Feed-Reader-Testing-(project-%234)
